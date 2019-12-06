@@ -134,7 +134,7 @@ extension LogLinter: SKQueueDelegate {
 
     // MARK: - Functions
 
-    func receivedNotification(_ notification: SKQueueNotification, path: String, queue: SKQueue) {
+    public func receivedNotification(_ notification: SKQueueNotification, path: String, queue: SKQueue) {
         guard notification.contains(.Write) else {
             return
         }
